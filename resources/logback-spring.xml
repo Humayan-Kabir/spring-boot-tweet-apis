@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+    <springProperty scope="context"
+                    name="basedir"
+                    source="server.tomcat.basedir"
+                    defaultValue="tmp/logs"
+    />
+    <include resource="logback/catalina-file-appender.xml"/>
+    <include resource="logback/stats-file-appender.xml"/>
+    <include resource="logback/stdout-appender.xml"/>
+
+    <springProfile name="local">
+        <logger name="com.example.twitterapplication" level="DEBUG" additivity="false">
+            <appender-ref ref="STATS-FILE"/>
+        </logger>
+    </springProfile>
+
+
+     <logger name="com.example.twitterapplication" level="INFO" additivity="false">
+         <appender-ref ref="CATALINA-FILE"/>
+     </logger>
+
+    <logger name="com.example.twitterapplication" level="INFO" additivity="false">
+        <appender-ref ref="STATS-FILE"/>
+    </logger>
+
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
