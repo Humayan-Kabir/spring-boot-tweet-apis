@@ -23,6 +23,3 @@ Spring Security
 JWT (JSON Web Tokens)
 Liquibase
 Logback
-
-Frontend:
-ReactJS
