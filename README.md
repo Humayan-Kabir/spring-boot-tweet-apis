@@ -1,5 +1,5 @@
 # spring-boot-tweet-apis
-‭This is a backed project providing necessary‬‭ restful-APIs ‬‭for twitter like service. It has features‬‭ like user‬
+‭This is a backend project providing necessary‬‭ restful-APIs ‬‭for twitter like service. It has features‬‭ like user‬
 ‭authentication, authorization, management of posts, friends, comments‬‭.
 
 ## Technology
